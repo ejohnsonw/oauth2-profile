@@ -1,0 +1,33 @@
+description: Basic oauth security plugin
+build:
+  plugins:
+  - org.grails.grails-web
+  excludes:
+  - org.grails.grails-core
+dependencies:
+  compile:
+  - org.springframework.boot:spring-boot-starter-security
+  - commons-configuration:commons-configuration:1.10
+  - commons-codec:commons-codec:1.10
+  - commons-lang:commons-lang:2.6
+  - commons-io:commons-io:2.4
+  - org.json:json:20160212
+  - commons-configuration:commons-configuration:1.10
+  - commons-codec:commons-codec:1.10
+  - commons-lang:commons-lang:2.6
+  - commons-io:commons-io:2.4
+  - org.json:json:20160212
+  - mysql:mysql-connector-java:5.1.39
+  - org.grails.plugins:jasypt-encryption:2.0.1
+  - org.grails:grails-datastore-rest-client:5.0.8.RELEASE
+  - org.springframework.security.oauth:spring-security-oauth2:2.0.10.RELEASE
+name: oauth2
+extends: org.grails.profiles:web:3.2.0.RC1
+commands:
+  create-create-oauth2-domain: create-create-oauth2-domain.groovy
+  create-run-oauth-sql: create-run-oauth-sql.groovy
+templates:
+- create-oauth2-domain/PersonDomain.groovy
+- create-oauth2-domain/PersonSecurityRoleDomain.groovy
+- create-oauth2-domain/SecurityRoleDomain.groovy
+- run-oauth-sql/RunOauthSql.groovy

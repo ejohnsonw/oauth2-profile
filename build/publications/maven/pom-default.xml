@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.grails.profiles</groupId>
+  <artifactId>oauth2</artifactId>
+  <version>1.0.0-SNAPSHOT</version>
+  <dependencies>
+    <dependency>
+      <groupId>org.grails.profiles</groupId>
+      <artifactId>web</artifactId>
+      <version>3.2.0.RC1</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <name>My Profile</name>
+  <description>Full profile description</description>
+  <url>https://github.com/foo/bar</url>
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <scm>
+    <url>https://github.com/foo/bar</url>
+    <connection>scm:git@github.com:foo/bar.git</connection>
+    <developerConnection>scm:git@github.com:foo/bar.git</developerConnection>
+  </scm>
+  <issueManagement>
+    <system>Github Issues</system>
+    <url>https://github.com/foo/bar/issues</url>
+  </issueManagement>
+  <developers>
+    <developer>
+      <id>johndoe</id>
+      <name>John Doe</name>
+    </developer>
+  </developers>
+</project>
